@@ -255,31 +255,6 @@ X_patches1=np.transpose(X_patches1,(0,2,3,1)).astype(np.float32)
 X_patches=np.transpose(X_patches,(0,2,3,1)).astype(np.float32)
 
 
-# In[24]:
-
-
-X_patches2.shape
-
-
-# In[75]:
-
-
-Patches2.shape
-
-
-# In[25]:
-
-
-X_patches_4=np.load("x4.npy").astype(np.float32)
-
-
-# In[26]:
-
-
-Y_labels4=np.load("y4.npy").astype(np.uint8)
-
-
-# In[62]:
 
 
 X_patchesF=np.concatenate((X_patches,X_patches_4,X_patches2,X_patches1), axis=0)
